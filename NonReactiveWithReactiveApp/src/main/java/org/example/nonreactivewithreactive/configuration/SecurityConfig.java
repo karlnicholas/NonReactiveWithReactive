@@ -13,7 +13,6 @@ public class SecurityConfig {
     @Bean
     SecurityWebFilterChain springWebFilterChain(ServerHttpSecurity http) {
         http
-                // ...
                 .authorizeExchange((authorize) -> authorize.anyExchange().permitAll()
 		);
         return http.build();

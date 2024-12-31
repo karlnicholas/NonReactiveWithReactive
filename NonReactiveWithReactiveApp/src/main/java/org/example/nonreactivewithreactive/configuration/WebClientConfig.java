@@ -18,6 +18,7 @@ public class WebClientConfig {
         // Apply OAuth2 filter to WebClient
         ServerOAuth2AuthorizedClientExchangeFilterFunction oauth2Client =
                 new ServerOAuth2AuthorizedClientExchangeFilterFunction(authorizedClientManager);
+        oauth2Client.setDefaultClientRegistrationId("keycloak");
 
         return WebClient.builder()
                 .filter(oauth2Client)

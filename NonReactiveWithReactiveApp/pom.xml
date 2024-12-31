@@ -32,7 +32,7 @@
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
-            <version>6.0.0</version> <!-- Use a version compatible with your Spring Boot version -->
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
